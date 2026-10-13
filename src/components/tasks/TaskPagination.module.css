@@ -1,0 +1,48 @@
+/* =========================================================
+   TaskPagination — styles
+   ========================================================= */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 12px 0;
+  user-select: none;
+}
+
+/* Dấu chấm lửng */
+.ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  font-size: 14px;
+  color: var(--text, #6b6375);
+  cursor: default;
+}
+
+/* Thông tin "Trang X / Y" */
+.info {
+  margin-left: 12px;
+  font-size: 13px;
+  color: var(--text, #6b6375);
+  white-space: nowrap;
+}
+
+.info strong {
+  color: var(--text-h, #08060d);
+  font-weight: 600;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .info {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}
